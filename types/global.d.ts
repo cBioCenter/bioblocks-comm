@@ -10,6 +10,9 @@ declare type RecursivePartial<T> = { [P in keyof T]?: RecursivePartial<T[P]> };
 declare type RecursiveRequired<T> = { [P in keyof T]: Required<RecursiveRequired<T[P]>> };
 declare type PartialExcept<T, K extends keyof T> = RecursivePartial<T> & Pick<T, K>;
 
+declare type GENERIC_FUNCTION = (...args: any[]) => any;
+declare type EMPTY_FUNCTION = (...args: any[]) => void;
+
 declare namespace NodeJS {
   // tslint:disable-next-line:interface-name
   export interface Global {
