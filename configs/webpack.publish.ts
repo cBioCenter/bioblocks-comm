@@ -53,7 +53,7 @@ module.exports = (env: webpack.Compiler.Handler, argv: webpack.Configuration) =>
 
 const getWebpackPublishEntry = () => ({
   'bioblocks-frame': path.resolve(__dirname, '../frames/BBFrame.tsx'),
-  'bioblocks-viz': path.resolve(__dirname, '../src/index.ts'),
+  'bioblocks-comm': path.resolve(__dirname, '../src/index.ts'),
 });
 
 const getWebpackPublishOptimizations = (config: webpack.Configuration) => {
@@ -71,7 +71,7 @@ const getWebpackPublishOptimizations = (config: webpack.Configuration) => {
 
 const getWebpackPublishOutput = () => ({
   filename: (chunkData: { chunk: { name: string } }) => {
-    return chunkData.chunk.name === 'bioblocks-viz' ? 'index.js' : 'bioblocks-frame.js';
+    return chunkData.chunk.name === 'bioblocks-comm' ? 'index.js' : 'bioblocks-frame.js';
   },
   libraryExport: '',
   // Exporting as UMD allows bioblocks to be used in CommonJS, AMD, and as global variable.

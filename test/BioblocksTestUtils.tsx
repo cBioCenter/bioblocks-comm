@@ -3,14 +3,14 @@ import { CommonWrapper, mount, ReactWrapper, shallow } from 'enzyme';
 import * as plotly from 'plotly.js/lib/index-gl2d';
 import * as React from 'react';
 
-import { PlotlyChart } from '~bioblocks-viz~/component';
+import { PlotlyChart } from '~bioblocks-comm~/component';
 import {
   Bioblocks1DSection,
   SECONDARY_STRUCTURE,
   SECONDARY_STRUCTURE_CODES,
   SECONDARY_STRUCTURE_KEYS,
-} from '~bioblocks-viz~/data';
-import { IMockPlotlyCanvas } from '~bioblocks-viz~/test';
+} from '~bioblocks-comm~/data';
+import { IMockPlotlyCanvas } from '~bioblocks-comm~/test';
 
 /**
  * Helper function to create and wait for a Component to be mounted.
