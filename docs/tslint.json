@@ -1,0 +1,14 @@
+{
+  "defaultSeverity": "error",
+  "linterOptions": {
+    "exclude": ["SPRING_dev"]
+  },
+  "extends": ["../tslint.json"],
+  "jsRules": {},
+  "rules": {
+    "export-name": false,
+    "jsx-no-lambda": false,
+    "no-default-export": false
+  },
+  "rulesDirectory": []
+}

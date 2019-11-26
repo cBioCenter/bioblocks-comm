@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "esModuleInterop": true,
+    "outDir": "../lib",
+    "pretty": true,
+    "sourceMap": false,
+    "target": "es5"
+  },
+  "include": ["../frames", "../index.ts", "../src", "../types"],
+  "exclude": ["../configs", "../docs", "../node_modules", "../test", "../**/__tests__/**"]
+}
